@@ -4,7 +4,7 @@ To learn more about FOSSBilling, see https://fossbilling.org/
 
 This module is licensed under the GNU General Public License v3.0. See the LICENSE file for more information.
 
-Online documentation: https://support.netim.com/en/docs/blesta
+Online documentation: https://support.netim.com/en/docs/fossbilling
 
 Technical Support: modules-support@netim.com
 
