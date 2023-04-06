@@ -2,11 +2,15 @@
 This module is the implementation of the domain name registrar extension for Netim in FOSSBilling application.
 To learn more about FOSSBilling, see https://fossbilling.org/
 
+This module is licensed under the GNU General Public License v3.0. See the LICENSE file for more information.
+
 Online documentation: https://support.netim.com/en/docs/blesta
 
 Technical Support: modules-support@netim.com
 
-## _Domain Management_
+# Features
+
+__Domain Management__
 - Domain Registration
 - Domain Transfer
 - Domain Renewal
@@ -15,11 +19,11 @@ Technical Support: modules-support@netim.com
 - Support for AuthInfo Code (Domain Authorization Code)
 - Faster availability check by Netim
 
-## _Contact Management_
+__Contact Management__
 - Update of contact information
 - Full support of Latin character set (LATIN1 / LATIN-EXTA / LATIN-EXTB character sets)
 
-## _DNS Nameserver Management_
+__DNS Nameserver Management__
 - Nameserver changes
 
 # Testing
