@@ -1,9 +1,9 @@
 <?php
 /**
  * @copyright Netim (https://www.netim.com)
- * @license   Apache-2.0
+ * @license   GPL-3.0
  *
- * This source file is subject to the Apache-2.0 License that is bundled
+ * This source file is subject to the GPL-3.0 License that is bundled
  * with this source code in the file LICENSE
  * 
  * Module documentation is available at https://support.netim.com/en/docs/fossbilling

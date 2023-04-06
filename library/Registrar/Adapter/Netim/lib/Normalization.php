@@ -1,11 +1,4 @@
 <?php
-/** 
-@created 15/11/17
-@lastUpdated 30/10/20
-@version 1.0.0-BETA
-
-Utilities to deal with  the normalization of country, phone, ... 
-*/
 
 namespace Netim
 {
