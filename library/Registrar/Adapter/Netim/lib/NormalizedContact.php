@@ -1,5 +1,12 @@
 <?php
 
+/** 
+Normalized contact object derivated from the contact object
+@created 2017-11-15
+@lastUpdated 2023-04-20
+@version 1.0.3
+*/
+
 namespace Netim
 {
     use Netim\Contact;
@@ -40,8 +47,8 @@ namespace Netim
     class NormalizedContact extends Contact
     {
         private $norm;
-        public function __construct(string $firstName, string $lastName, ?string $bodyName = "", string $address1, ?string $address2 = "", string $zipCode,
-        string $state, string $countryCode, string $city, string $phone, string $email, string $lang, int $isOwner, ?string $tmName = "",
+        public function __construct(string $firstName, string $lastName, string $bodyName, string $address1, string $address2, string $zipCode,
+        string $state, string $country, string $city, string $phone, string $email, string $lang, int $isOwner, ?string $tmName = "",
         ?string $tmNumber = "", ?string $tmType = "", ?string $tmDate = "", ?string $companyNumber = "", ?string $vatNumber = "", ?string $birthDate = "",
         ?string $birthZipCode = "", ?string $birthCity = "", ?string $birthCountry = "", ?string $idNumber = "", ?array $additional = array())
         {
@@ -52,9 +59,9 @@ namespace Netim
             $bodyName   = $this->norm->specialCharacter($bodyName);
             $address1   = $this->norm->specialCharacter($address1);
             $address2   = $this->norm->specialCharacter($address2 ?? "");
-            $area	    = $this->norm->state($state, $countryCode);
+            $country    = $this->norm->country($country);
+            $area	    = $this->norm->state($state, $country);
             $city       = $this->norm->specialCharacter($city);
-            $country    = $this->norm->country($countryCode);
             $phone      = $this->norm->phoneNumber($phone, $country);
             $fax        = '';
             $language   = ($lang == 'FR') ? 'FR' : 'EN';
