@@ -696,7 +696,7 @@ class Registrar_Adapter_Netim extends Registrar_AdapterAbstract
             $api = new Netim\APISoap($username, $password, $this->_testMode);
 
             //Don't update setVersion() call, it used by NETIM to track and follow module usage
-            $version = \Box_Version::VERSION;
+            $version = \FOSSBilling_Version::VERSION;
         	$api->setVersion("FOSSB=".$version.",PLUGIN=".self::MODULE_VERSION);
 
 			//Increase synchronization value
