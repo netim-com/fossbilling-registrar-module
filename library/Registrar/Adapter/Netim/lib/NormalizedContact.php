@@ -47,7 +47,7 @@ namespace Netim
     class NormalizedContact extends Contact
     {
         private $norm;
-        public function __construct(string $firstName, string $lastName, string $bodyName, string $address1, string $address2, string $zipCode,
+        public function __construct(string $firstName, string $lastName, string $bodyName, string $address1, ?string $address2 = "", string $zipCode,
         string $state, string $country, string $city, string $phone, string $email, string $lang, int $isOwner, ?string $tmName = "",
         ?string $tmNumber = "", ?string $tmType = "", ?string $tmDate = "", ?string $companyNumber = "", ?string $vatNumber = "", ?string $birthDate = "",
         ?string $birthZipCode = "", ?string $birthCity = "", ?string $birthCountry = "", ?string $idNumber = "", ?array $additional = array())
